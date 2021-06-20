@@ -1,0 +1,22 @@
+{
+    "name": "jewel",
+    "displayName": "Jewel",
+    "description": "Consistent, Discreet, Intelli-J like token colorization",
+    "version": "0.0.1",
+    "publisher": "canelhas",
+    "engines": {
+        "vscode": "^1.57.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Jewel",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Jewel-color-theme.json"
+            }
+        ]
+    }
+}
