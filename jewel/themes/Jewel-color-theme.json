@@ -18,6 +18,16 @@
 			}
 		},
 		{
+			"name": "Comment",
+			"scope": [
+				"punctuation.definition.comment",
+				"comment.line",
+			],
+			"settings": {
+				"foreground": "#808080",
+			}
+		},
+		{
 			"name": "Escape",
 			"scope": [
 				"constant.character.escape"
@@ -84,7 +94,9 @@
 			"scope": [
 				"punctuation.definition.variable.svelte",
 				"storage.type.ts",
-				"keyword.operator.assignment.ts"
+				"keyword.operator.assignment.ts",
+				"storage.type.type.ts",
+				"storage.modifier.async.ts"
 			],
 			"settings": {
 				"foreground": "#CC7832",
