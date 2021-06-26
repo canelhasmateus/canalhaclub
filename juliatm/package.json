@@ -1,0 +1,26 @@
+{
+    "name": "juliatm",
+    "displayName": "juliaTextMate",
+    "description": "",
+    "version": "0.0.1",
+    "publisher":"canelhasmateus",
+    "engines": {
+        "vscode": "^1.57.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "julia",
+            "aliases": ["Julia", "julia"],
+            "extensions": [".jl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "julia",
+            "scopeName": "source.julia",
+            "path": "./syntaxes/julia.tmLanguage"
+        }]
+    }
+}

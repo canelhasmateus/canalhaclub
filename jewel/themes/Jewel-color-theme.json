@@ -242,6 +242,38 @@
 				"foreground": "#82AAFF"
 			}
 		},
+		// julia
+		{
+			"scope": "support.type.julia",
+			"settings": {
+				"foreground": "#D1DDE9",
+				"fontStyle": "italic bold",
+			}
+		},
+		{
+			"scope": "support.function.julia",
+			"settings": {
+				"foreground": "#82AAFF"
+			}
+		},
+		{
+			"scope": [
+				"entity.name.function.julia",
+				"keyword.control.type.julia"
+			],
+			"settings": {
+				"foreground": "#FFC66D"
+			}
+		},
+		{
+			"scope": [
+				"meta.type.julia",
+			],
+			"settings": {
+				"foreground": "#8659db",
+				"fontStyle": "italic bold"
+			}
+		}
 	],
 	"semanticHighlighting": true,
 	"semanticTokenColors": {

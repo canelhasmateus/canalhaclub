@@ -2,8 +2,8 @@
     "name": "jewel",
     "displayName": "Jewel",
     "description": "Consistent, Discreet, Intelli-J like token colorization",
-    "version": "0.0.1",
-    "publisher": "canelhas",
+    "version": "0.0.3",
+    "publisher": "canelhasmateus",
     "engines": {
         "vscode": "^1.57.0"
     },

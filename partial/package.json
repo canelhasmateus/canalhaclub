@@ -12,7 +12,7 @@
 	"activationEvents": [
 		"*"
 	],
-	"publisher": "canelhas",
+	"publisher": "canelhasmateus",
 	"main": "./dist/extension.js",
 	"contributes": {
 		"commands": [
