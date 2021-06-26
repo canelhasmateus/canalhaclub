@@ -1,0 +1,25 @@
+{
+    "name": "nimtm",
+    "displayName": "nimtm",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.57.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "nim",
+            "aliases": ["Nim", "nim"],
+            "extensions": [".nim"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "nim",
+            "scopeName": "source.nim",
+            "path": "./syntaxes/nim.tmLanguage"
+        }]
+    }
+}
