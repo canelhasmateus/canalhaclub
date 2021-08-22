@@ -242,6 +242,12 @@
 				"foreground": "#82AAFF"
 			}
 		},
+		{
+			"scope": "constant.language.nim",
+			"settings": {
+				"foreground": "#CC7832"
+			}
+		},
 		// julia
 		{
 			"scope": "support.type.julia",
@@ -254,6 +260,25 @@
 			"scope": "support.function.julia",
 			"settings": {
 				"foreground": "#82AAFF"
+			}
+		},
+		{
+			"scope": [
+				"keyword.operator.bitwise.julia",
+				"keyword.operator.relation.julia",
+				"keyword.operator.arrow.julia"
+			],
+			"settings": {
+				"foreground": "#e95c5c"
+			}
+		},
+		{
+			"scope": [
+				"storage.modifier.variable.julia",
+				"constant.language.julia"
+			],
+			"settings": {
+				"foreground": "#CC7832"
 			}
 		},
 		{
@@ -272,6 +297,12 @@
 			"settings": {
 				"foreground": "#8659db",
 				"fontStyle": "italic bold"
+			}
+		},
+		{
+			"scope": "support.function.macro.julia",
+			"settings": {
+				"foreground": "#FFC66D"
 			}
 		}
 	],
