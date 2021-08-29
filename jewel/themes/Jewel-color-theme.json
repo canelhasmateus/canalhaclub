@@ -304,7 +304,17 @@
 			"settings": {
 				"foreground": "#FFC66D"
 			}
+		},
+
+
+	//rust 
+	{
+		"scope": "entity.name.type.numeric.rust",
+		"settings": {
+			"foreground": "#D1DDE9",
+			"fontStyle": "italic bold",
 		}
+	}
 	],
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
