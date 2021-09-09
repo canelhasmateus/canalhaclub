@@ -352,7 +352,26 @@
 			"settings": {
 				"foreground": "#FF0000"
 			}
+		},
+		{
+			"scope": "variable.other.constant.clojure",
+			"settings": {
+				"foreground": "#FFC66D"
+			}
+		},
+		{
+			"scope": "meta.symbol.namespace",
+			"settings": {
+				"foreground": "#4f95ce"
+			}
+		},
+		{
+			"scope": "entity.name.function.clojure",
+			"settings": {
+				"foreground": "#82AAFF"
+			}
 		}
+
 	],
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
