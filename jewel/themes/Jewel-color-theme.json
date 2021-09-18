@@ -37,34 +37,113 @@
 			}
 		},
 		{
+			"name": "Imports",
+			"scope": [
+				"meta.use.rust"
+			],
+			"settings": {
+				"fontStyle": "bold italic"
+			}
+		},
+		{
+			"name": "Declarations",
+			"scope": [
+				"meta.function.definition entity.name.function",
+				"entity.name.module" , 
+				"entity.name.function.julia",
+			],
+			"settings": {
+				"foreground": "#FFC66D"
+			}
+		},
+		{
+			"name": "Types",
+			"scope": [
+				"entity.name.type",
+				"support.type",
+				"meta.type",
+				"storage.type.concrete"
+
+			],
+			"settings": {
+				"foreground": "#D1DDE9",
+				"fontStyle": "italic bold",
+			}
+		},
+		{
 			"name": "Keyword",
 			"scope": [
-				"keyword",
 				"entity.name.label",
-				"storage.type.function",
-				"storage.type.class",
-				"storage.type.function.arrow",
+				"entity.other.inherited-class",
+				"keyword",
+				"punctuation",
+				"storage.type",
+				"storage.modifier",
+				"variable.language.self",
+				"meta.bracket.julia" , 
+
+
 			],
 			"settings": {
 				"foreground": "#CC7832",
 			}
 		},
 		{
+			"name": "Soft Operations",
 			"scope": [
-				"string.quoted.single",
-				"string.quoted.double",
-				"string.quoted.triple",
+				"keyword.operator",
+			],
+			"settings": {
+				"foreground": "#e67d7d"
+			}
+		},
+		{
+			"name": "Text",
+			"scope": [
+				"string.quoted",
+				"punctuation.definition.string"
 			],
 			"settings": {
 				"foreground": "#629755"
 			}
 		},
 		{
+			"name": "Number",
 			"scope": [
 				"constant.numeric"
 			],
 			"settings": {
 				"foreground": "#6897BB",
+			}
+		},
+		{
+			"name": "Functions",
+			"scope": [
+				"entity.name.function",
+				"support.function"
+			],
+			"settings": {
+				"foreground": "#82AAFF"
+			}
+		},
+		{
+			"name": "Meta",
+			"scope": [
+				"entity.name.function.macro",
+				"meta.attribute"
+			],
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Macros",
+			"scope": [
+				"support.function.macro",
+			],
+			"settings": {
+				"foreground": "#FFFFFF",
+				"fontStyle": "italic"
 			}
 		},
 		// Typescript
@@ -211,16 +290,8 @@
 			}
 		},
 		// nim 
-		{
-			"scope": [
-				"support.type.nim",
-				"storage.type.concrete.nim"
-			],
-			"settings": {
-				"foreground": "#D1DDE9",
-				"fontStyle": "italic bold",
-			}
-		},
+		
+		
 		{
 			"scope": [
 				"support.constant.nim"
@@ -250,26 +321,9 @@
 		},
 		// julia
 		{
-			"scope": "support.type.julia",
-			"settings": {
-				"foreground": "#D1DDE9",
-				"fontStyle": "italic bold",
-			}
-		},
-		{
 			"scope": "support.function.julia",
 			"settings": {
 				"foreground": "#82AAFF"
-			}
-		},
-		{
-			"scope": [
-				"keyword.operator.bitwise.julia",
-				"keyword.operator.relation.julia",
-				"keyword.operator.arrow.julia"
-			],
-			"settings": {
-				"foreground": "#e95c5c"
 			}
 		},
 		{
@@ -281,78 +335,9 @@
 				"foreground": "#CC7832"
 			}
 		},
-		{
-			"scope": [
-				"entity.name.function.julia",
-				"keyword.control.type.julia"
-			],
-			"settings": {
-				"foreground": "#FFC66D"
-			}
-		},
-		{
-			"scope": [
-				"meta.type.julia",
-			],
-			"settings": {
-				"foreground": "#8659db",
-				"fontStyle": "italic bold"
-			}
-		},
-		{
-			"scope": "support.function.macro.julia",
-			"settings": {
-				"foreground": "#82AAFF"
-			}
-		},
-		//rust 
-		{
-			"scope": [
-				"entity.name.type.numeric.rust",
-				"entity.name.type.rust",
-				"entity.name.type.primitive.rust",
-			],
-			"settings": {
-				"foreground": "#D1DDE9",
-				"fontStyle": "italic bold",
-			}
-		},
-		{
-			"scope": [
-				"punctuation.semi.rust",
-				"variable.language.self.rust",
-				"punctuation.comma.rust"
-			],
-			"settings": {
-				"foreground": "#CC7832"
-			}
-		},
-		{
-			"scope": [ "keyword.operator.arrow.fat.rust" , 
-			"keyword.operator.arrow.skinny.rust"],
-			"settings": {
-				"foreground": "#f79696"
-			}
-		},
-	
-		{
-			"scope": ["entity.name.function.macro.rust"],
-			"settings": {
-				"foreground": "#ffffff"
-			}
-		} , 
-		{
-			"scope": ["meta.function.definition.rust entity.name.function.rust"],
-			"settings": {
-				"foreground": "#FFC66D"
-			}
-		},
-		{
-			"scope": [ " meta.function.call.rust entity.name.function.rust"],
-			"settings": {
-				"foreground": "#FF0000"
-			}
-		},
+		
+		
+		// clojure
 		{
 			"scope": "variable.other.constant.clojure",
 			"settings": {
@@ -370,8 +355,7 @@
 			"settings": {
 				"foreground": "#82AAFF"
 			}
-		}
-
+		},
 	],
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
