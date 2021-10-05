@@ -39,50 +39,39 @@
 		{
 			"name": "Imports",
 			"scope": [
-				"meta.use.rust"
+				"meta.use.rust",
+				"storage.modifier.import",
+				"storage.modifier.package"
 			],
 			"settings": {
-				"fontStyle": "bold italic"
+				"foreground": "#A9B7C6",
 			}
 		},
 		{
 			"name": "Declarations",
 			"scope": [
 				"meta.function.definition entity.name.function",
-				"entity.name.module" , 
+				"entity.name.module",
 				"entity.name.function.julia",
 			],
 			"settings": {
 				"foreground": "#FFC66D"
 			}
 		},
-		{
-			"name": "Types",
-			"scope": [
-				"entity.name.type",
-				"support.type",
-				"meta.type",
-				"storage.type.concrete"
 
-			],
-			"settings": {
-				"foreground": "#D1DDE9",
-				"fontStyle": "italic bold",
-			}
-		},
 		{
 			"name": "Keyword",
 			"scope": [
 				"entity.name.label",
-				"entity.other.inherited-class",
+				// punctuation.definition.variable.svelte
+				// "entity.other.inherited-class",
 				"keyword",
 				"punctuation",
 				"storage.type",
 				"storage.modifier",
 				"variable.language.self",
-				"meta.bracket.julia" , 
-
-
+				"meta.bracket.julia",
+				"constant.language",
 			],
 			"settings": {
 				"foreground": "#CC7832",
@@ -120,7 +109,9 @@
 			"name": "Functions",
 			"scope": [
 				"entity.name.function",
-				"support.function"
+				"support.function",
+				"entity.name.function",
+				"meta.function-call"
 			],
 			"settings": {
 				"foreground": "#82AAFF"
@@ -130,7 +121,7 @@
 			"name": "Meta",
 			"scope": [
 				"entity.name.function.macro",
-				"meta.attribute"
+				"meta.attribute",
 			],
 			"settings": {
 				"fontStyle": "italic"
@@ -140,10 +131,28 @@
 			"name": "Macros",
 			"scope": [
 				"support.function.macro",
+				"punctuation.definition.annotation",
+				"storage.type.annotation"
 			],
 			"settings": {
-				"foreground": "#FFFFFF",
+				"foreground": "#98a12a",
 				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Types",
+			"scope": [
+				"support.type",
+				"meta.type",
+				"storage.type.concrete",
+				"storage.type.primitive",
+				"storage.type.built-in",
+				"entity.other.inherited-class",
+				"entity.name.type.class"
+			],
+			"settings": {
+				"foreground": "#D1DDE9",
+				"fontStyle": "italic bold",
 			}
 		},
 		// Typescript
@@ -168,19 +177,7 @@
 				"fontStyle": "underline"
 			}
 		},
-		{
-			"name": "Keyword",
-			"scope": [
-				"punctuation.definition.variable.svelte",
-				"storage.type.ts",
-				"keyword.operator.assignment.ts",
-				"storage.type.type.ts",
-				"storage.modifier.async.ts"
-			],
-			"settings": {
-				"foreground": "#CC7832",
-			}
-		},
+		
 		{
 			"scope": [
 				"meta.definition.function.ts",
@@ -210,16 +207,6 @@
 			],
 			"settings": {
 				"foreground": "#A9B7C6"
-			}
-		},
-		{
-			"scope": [
-				"meta.type.annotation.ts",
-				"meta.return.type.ts"
-			],
-			"settings": {
-				"foreground": "#D1DDE9",
-				"fontStyle": "italic bold",
 			}
 		},
 		{
@@ -265,19 +252,6 @@
 			}
 		},
 		{
-			"scope": "entity.name.type.class.python",
-			"settings": {
-				"foreground": "#D1DDE9",
-				"fontStyle": "italic bold",
-			}
-		},
-		{
-			"scope": "meta.function-call.python",
-			"settings": {
-				"foreground": "#82AAFF",
-			}
-		},
-		{
 			"scope": "meta.function-call.arguments.python",
 			"settings": {
 				"foreground": "#A9B7C6"
@@ -290,8 +264,6 @@
 			}
 		},
 		// nim 
-		
-		
 		{
 			"scope": [
 				"support.constant.nim"
@@ -335,8 +307,6 @@
 				"foreground": "#CC7832"
 			}
 		},
-		
-		
 		// clojure
 		{
 			"scope": "variable.other.constant.clojure",
@@ -359,6 +329,9 @@
 	],
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
+		"method.declaration:java": {
+			"foreground": "#FFC66D",
+		},
 		"*.typeHint:python": {
 			"foreground": "#D1DDE9",
 			"fontStyle": "italic bold"
