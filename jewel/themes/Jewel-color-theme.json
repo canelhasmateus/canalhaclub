@@ -52,19 +52,21 @@
 			"scope": [
 				"meta.function.definition entity.name.function",
 				"entity.name.module",
-				"entity.name.function.julia",
+				"entity.name.module",
+				"source.yml entity.name",
+				"fenced_code.block.language"
 			],
 			"settings": {
 				"foreground": "#FFC66D"
 			}
 		},
-
 		{
 			"name": "Keyword",
 			"scope": [
 				"entity.name.label",
 				// punctuation.definition.variable.svelte
 				// "entity.other.inherited-class",
+				"keyword.local.lua",
 				"keyword",
 				"punctuation",
 				"storage.type",
@@ -75,22 +77,27 @@
 			],
 			"settings": {
 				"foreground": "#CC7832",
+				"fontStyle": ""
 			}
 		},
 		{
 			"name": "Soft Operations",
 			"scope": [
 				"keyword.operator",
+				"entity.name.tag.yaml",
 			],
 			"settings": {
-				"foreground": "#e67d7d"
+				"foreground": "#e67d7d",
+				"fontStyle": ""
 			}
 		},
 		{
 			"name": "Text",
 			"scope": [
 				"string.quoted",
-				"punctuation.definition.string"
+				"punctuation.definition.string",
+				"string.unquoted",
+				"string"
 			],
 			"settings": {
 				"foreground": "#629755"
@@ -108,10 +115,10 @@
 		{
 			"name": "Functions",
 			"scope": [
-				"entity.name.function",
 				"support.function",
-				"entity.name.function",
-				"meta.function-call"
+				"meta.function-call",
+				"entity.name.function.ahk",
+				"entity.name.function.mermaid"
 			],
 			"settings": {
 				"foreground": "#82AAFF"
@@ -148,7 +155,8 @@
 				"storage.type.primitive",
 				"storage.type.built-in",
 				"entity.other.inherited-class",
-				"entity.name.type.class"
+				"entity.name.type.class",
+				"meta.group storage.type"
 			],
 			"settings": {
 				"foreground": "#D1DDE9",
@@ -177,7 +185,6 @@
 				"fontStyle": "underline"
 			}
 		},
-		
 		{
 			"scope": [
 				"meta.definition.function.ts",
@@ -307,6 +314,16 @@
 				"foreground": "#CC7832"
 			}
 		},
+		{
+			"name": "Variables",
+			"scope": [
+				"variable.other.readwrite.powershell",
+			],
+			"settings": {
+				"foreground": "#e67d7d",
+				// "fontStyle": "bold"
+			}
+		},
 		// clojure
 		{
 			"scope": "variable.other.constant.clojure",
@@ -326,6 +343,67 @@
 				"foreground": "#82AAFF"
 			}
 		},
+		// json
+		{
+			"scope": [
+				"source.json meta.structure support.type"
+			],
+			"settings": {
+				"foreground": "#D1DDE9",
+				"fontStyle": ""
+			}
+		},
+		
+		// {
+		// 	"scope": [
+		// 		"source.json meta.structure.dictionary.json meta.structure.dictionary.json support.type.property-name"
+		// 	],
+		// 	"settings": {
+		// 		"foreground": "#D1DDE9",
+				
+				
+
+		// 	}
+		// },
+		// {
+		// 	"scope": [
+		// 		"source.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json support.type.property-name"
+		// 	],
+		// 	"settings": {
+		// 		"foreground": "#179387",
+		// 		"fontStyle": ""
+		// 	}
+		// }
+
+		// Markdown
+		{
+			"scope" : ["entity.name.section.markdown"],
+			"settings": {
+				"foreground": "#A9B7C6",
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"scope" : [ "string.other.link.title.markdown.foam"] , 
+			"settings": {
+				"foreground": "#e67d7d",
+				"fontStyle": "bold"
+			}
+
+		},
+		{
+			"scope": ["markup.list.unnumbered.markdown"],
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": "markup.quote.markdown",
+			"settings": {
+				"foreground": "#FF0000"
+			}
+		}
+		
 	],
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
