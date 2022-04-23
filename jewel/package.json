@@ -1,6 +1,7 @@
 {
     "name": "jewel",
     "displayName": "Jewel",
+    "repository": "https://github.com/canelhasmateus/canalhaclub",
     "description": "Consistent, Discreet, Intelli-J like token colorization",
     "version": "0.0.4",
     "publisher": "canelhasmateus",
@@ -16,6 +17,19 @@
                 "label": "Jewel",
                 "uiTheme": "vs-dark",
                 "path": "./themes/Jewel-color-theme.json"
+            }
+        ],
+        
+        "colors": [
+            {
+                "id": "jewel.orange",
+                "description": "orage",
+                "defaults": {
+                    "dark": "#f00",
+                    "highContrast": "#f00",
+                    "highContrastLight": "#f00",
+                    "light": "#f00"
+                }
             }
         ]
     }
