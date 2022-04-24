@@ -424,6 +424,8 @@
 		{
 			"name": "Italic",
 			"scope": [
+				"markup.italic.markdown",
+
 				// Types
 				"storage.type.annotation",
 				// Macro / Julia
@@ -433,6 +435,8 @@
 				"markup.list.unnumbered.markdown",
 				"meta.attribute",
 				"punctuation.definition.annotation",
+				
+
 			],
 			"settings": {
 				"fontStyle": "italic"
@@ -464,6 +468,7 @@
 			"settings": {
 				"fontStyle": "italic bold",
 			}
+
 		},
 		{
 			"name": "Underline",
@@ -475,6 +480,15 @@
 			],
 			"settings": {
 				"fontStyle": "underline"
+			}
+		},
+		{
+			"name": "bold",
+			"scope": [
+				"markup.bold.markdown",
+			],
+			"settings": {
+				"fontStyle": "bold"
 			}
 		},
 	],
