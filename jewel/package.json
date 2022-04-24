@@ -18,19 +18,6 @@
                 "uiTheme": "vs-dark",
                 "path": "./themes/Jewel-color-theme.json"
             }
-        ],
-        
-        "colors": [
-            {
-                "id": "jewel.orange",
-                "description": "orage",
-                "defaults": {
-                    "dark": "#f00",
-                    "highContrast": "#f00",
-                    "highContrastLight": "#f00",
-                    "light": "#f00"
-                }
-            }
         ]
     }
 }

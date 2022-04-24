@@ -244,6 +244,7 @@
 				"string.template.ts meta.template.expression.ts meta.embedded.line.ts variable.other.readwrite.ts",
 				// From XML
 				"text.xml",
+				"string.other.link.title.markdown ",
 			],
 			"settings": {
 				"foreground": "#A9B7C6",
@@ -266,13 +267,10 @@
 				"constant.character.escape",
 				"entity.name.function.",
 				"entity.name.module",
-					
-
 				"fenced_code.block.language",
 				"meta.definition.function.ts",
 				"meta.function.definition entity.name.function",
 				"punctuation.definition.annotation",
-
 				// From Typescript
 				"punctuation.definition.string.template.begin",
 				"punctuation.definition.string.template.end",
@@ -283,10 +281,7 @@
 				"variable.other.constant.clojure",
 				// From XML
 				"variable.language.documentroot",
-				
-
 				"entity.name.tag",
-
 			],
 			"settings": {
 				"foreground": "#FFC66D",
@@ -297,23 +292,17 @@
 			"scope": [
 				"constant.language",
 				// "entity.name.label",
-				
 				"keyword",
 				"keyword.local",
 				"keyword.operator",
-				
 				"meta.bracket.julia",
 				"punctuation",
-				
-
 				"storage.type",
 				"storage.modifier",
-
 				// "storage.modifier.variable.julia",
 				// "variable.language.self",
 				// "entity.other.inherited-class",
 				// punctuation.definition.variable.svelte
-				
 			],
 			"settings": {
 				"foreground": "#CC7832",
@@ -329,7 +318,6 @@
 				"foreground": "#e67d7d",
 			}
 		},
-		
 		{
 			"name": "Green",
 			"scope": [
@@ -350,31 +338,31 @@
 				"constant.numeric"
 			],
 			"settings": {
-				
 				"foreground": "#6897BB",
 			}
 		},
 		{
 			"name": "Darker Blue",
 			"scope": [
+				"meta.function-call.ts entity.name.function.ts",
+				"meta.import.ts meta.block.ts",
+				"meta.import.ts variable.other.readwrite.alias.ts",
 				"entity.name.function.ahk",
 				"entity.name.function.clojure",
 				"entity.name.function.mermaid",
-				"meta.function-call.ts entity.name.function.ts",
-				"meta.function-call",
-				"meta.import.ts meta.block.ts",
-				"meta.import.ts variable.other.readwrite.alias.ts",
-				"meta.symbol.namespace",
 				"support.function.any-method.nim",
 				"support.function.julia",
-				"support.function.julia",
+				"support.function.powershell",
+				"meta.link.inline.markdown markup.underline.link.markdown",
+				//  Not sure
+				"meta.function-call",
+				"meta.symbol.namespace",
 			],
 			"settings": {
 				// "foreground": "#4f95ce",
 				"foreground": "#82AAFF"
 			}
 		},
-		
 		{
 			"name": "White",
 			"scope": [
@@ -389,7 +377,6 @@
 				"meta.group storage.type",
 				"source.json meta.structure support.type",
 				"storage.type.annotation",
-				
 			],
 			"settings": {
 				"foreground": "#D1DDE9",
@@ -402,13 +389,11 @@
 				// "variable",
 				// "variable.other.readwrite",
 				// "punctuation.definition.variable",
-
 			],
 			"settings": {
 				"foreground": "#FF0000"
 			}
 		},
-
 		{
 			"name": "Purple",
 			"scope": [
@@ -422,31 +407,28 @@
 				"support.variable.automatic",
 				// From Powershell
 				"support.variable.automatic punctuation.definition.variable"
-				
-
-
 			],
 			"settings": {
 				"foreground": "#9876AA",
 			}
 		},
-
-
+		{
+			"scope": "keyword.operator",
+			"settings": {
+				"foreground": "#FF0000"
+			}
+		},
 		// 
 		// Styles
 		// 
 		{
 			"name": "Italic",
 			"scope": [
-				
 				// Types
 				"storage.type.annotation",
-				
-				
 				// Macro / Julia
 				"entity.name.function.macro",
 				"support.function.macro",
-
 				// Not Sure
 				"markup.list.unnumbered.markdown",
 				"meta.attribute",
@@ -461,7 +443,6 @@
 			"scope": [
 				"meta.object-literal.key.ts",
 				"meta.objectliteral.ts punctuation.definition.block.ts",
-				
 			],
 			"settings": {
 				"fontStyle": "underline"
@@ -477,7 +458,8 @@
 				"storage.type.built-in",
 				"entity.other.inherited-class",
 				"entity.name.type.class",
-				"meta.group storage.type"
+				"meta.group storage.type",
+				"string.other.link.title.markdown ",
 			],
 			"settings": {
 				"fontStyle": "italic bold",
@@ -495,24 +477,6 @@
 				"fontStyle": "underline"
 			}
 		},
-		// json
-		// {
-		// 	"scope": [
-		// 		"source.json meta.structure.dictionary.json meta.structure.dictionary.json support.type.property-name"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#D1DDE9",
-		// 	}
-		// },
-		// {
-		// 	"scope": [
-		// 		"source.json meta.structure.dictionary.json meta.structure.dictionary.json meta.structure.dictionary.json support.type.property-name"
-		// 	],
-		// 	"settings": {
-		// 		"foreground": "#179387",
-		// 		"fontStyle": ""
-		// 	}
-		// }
 	],
 	// 
 	// Semantic
@@ -540,7 +504,6 @@
 		"variable": {
 			// "foreground": "#A9B7C6",
 			// "underline": true
-			
 		},
 	}
 }
