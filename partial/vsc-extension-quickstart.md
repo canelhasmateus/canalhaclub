@@ -40,3 +40,33 @@
  * Reduce the extension size and improve the startup time by [bundling your extension](https://code.visualstudio.com/api/working-with-extensions/bundling-extension).
  * [Publish your extension](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) on the VSCode extension marketplace.
  * Automate builds by setting up [Continuous Integration](https://code.visualstudio.com/api/working-with-extensions/continuous-integration).
+
+
+
+
+#
+
+import { IInstantiationService, ServicesAccessor } from 'vs/platform/instantiation/common/instantiation';
+
+export class ShowAllCommandsAction extends Action2 {
+
+	static readonly ID = 'workbench.action.showCommands';
+
+	constructor() {
+		super({
+			id: ShowAllCommandsAction.ID,
+			title: { value: localize('showTriggerActions', "Show All Commands"), original: 'Show All Commands' },
+			f1: true,
+			keybinding: {
+				weight: KeybindingWeight.WorkbenchContrib,
+				when: undefined,
+				primary: !isFirefox ? (KeyMod.CtrlCmd | KeyMod.Shift | KeyCode.KeyP) : undefined,
+				secondary: [KeyCode.F1]
+			}
+		});
+	}
+
+	async run(accessor: ServicesAccessor): Promise<void> {
+		accessor.get(IQuickInputService).quickAccess.show(CommandsQuickAccessProvider.PREFIX);
+	}
+}
