@@ -2,6 +2,12 @@
 	"name": "Jewel",
 	"type": "dark",
 	"colors": {
+		// "editorBracketHighlight.foreground1": "#E8BA36",
+		// "editorBracketHighlight.foreground2": "#54A857",
+		// "editorBracketHighlight.foreground3": "#82AAFF",
+		// "editorBracketHighlight.foreground4": "#5060BB",
+		// "editorBracketHighlight.foreground5": "#179387",
+
 		"editor.background": "#2B2B2B",
 		"editor.foreground": "#A9B7C6",
 		// "editorIndentGuide.background": "#A9B7C6",
@@ -230,18 +236,25 @@
 		{
 			"name": "Source",
 			"scope": [
+
 				"entity.name.section.markdown",
-				"keyword.operator.assignment.ts",
+				
+
+				
 				"meta.function-call.arguments.python",
 				"meta.use.rust",
 				"source",
+				"variable.other.object.property.ts",
 				"storage.modifier.import",
 				"storage.modifier.package",
 				// From TS
+				"variable.parameter.ts",
+				"keyword.operator.assignment.ts",
 				"string.template.ts meta.template.expression.ts meta.embedded.line.ts punctuation.accessor.ts",
 				"string.template.ts meta.template.expression.ts meta.embedded.line.ts variable.other.object.ts",
 				"string.template.ts meta.template.expression.ts meta.embedded.line.ts variable.other.property.ts",
 				"string.template.ts meta.template.expression.ts meta.embedded.line.ts variable.other.readwrite.ts",
+				"variable.other.object.ts",
 				// From XML
 				"text.xml",
 				"string.other.link.title.markdown ",
@@ -263,33 +276,43 @@
 		{
 			"name": "Golden",
 			"scope": [
-				"meta.scope.logical-expression.shell",
 				"constant.character.escape",
-				"entity.name.function.",
+				"entity.name.function",
 				"entity.name.module",
-				"fenced_code.block.language",
-				"meta.definition.function.ts",
-				"meta.function.definition entity.name.function",
-				"punctuation.definition.annotation",
+				"entity.name.section.markdown",
+				
 				// From Typescript
+				
+				"meta.definition.function.ts entity.name.function.ts",
+				"meta.function.definition entity.name.function",
 				"punctuation.definition.string.template.begin",
 				"punctuation.definition.string.template.end",
 				"punctuation.definition.template-expression.begin",
 				"punctuation.definition.template-expression.end",
-				"source.yml entity.name",
+			
+				
 				"support.function.macro",
 				"variable.other.constant.clojure",
-				// From XML
+				// From XML , YML
 				"variable.language.documentroot",
 				"entity.name.tag",
+				
+				// From Java 
+				"punctuation.definition.annotation",
+				// Others
+				"source.yml entity.name",
+				"meta.scope.logical-expression.shell",
 			],
 			"settings": {
 				"foreground": "#FFC66D",
 			}
 		},
+
 		{
 			"name": "Orange",
 			"scope": [
+					
+				"keyword.operator",
 				"constant.language",
 				// "entity.name.label",
 				"keyword",
@@ -303,6 +326,8 @@
 				// "variable.language.self",
 				// "entity.other.inherited-class",
 				// punctuation.definition.variable.svelte
+				"constant.language.boolean.false.ts",
+				
 			],
 			"settings": {
 				"foreground": "#CC7832",
@@ -344,9 +369,16 @@
 		{
 			"name": "Darker Blue",
 			"scope": [
-				"meta.function-call.ts entity.name.function.ts",
+				"entity.name.function.ts meta.function-call.ts",
+				// "meta.function-call.ts entity.name.function.ts",
 				"meta.import.ts meta.block.ts",
 				"meta.import.ts variable.other.readwrite.alias.ts",
+
+				
+				"entity.name.function.ts",
+				
+
+				
 				"entity.name.function.ahk",
 				"entity.name.function.clojure",
 				"entity.name.function.mermaid",
@@ -377,6 +409,8 @@
 				"meta.group storage.type",
 				"source.json meta.structure support.type",
 				"storage.type.annotation",
+				"punctuation.definition.typeparameters.begin.ts meta.type.parameters.ts"
+
 			],
 			"settings": {
 				"foreground": "#D1DDE9",
@@ -397,14 +431,16 @@
 		{
 			"name": "Purple",
 			"scope": [
+				"fenced_code.block.language",
 				"constant.character.entity",
-				"meta.objectliteral",
+				// "meta.objectliteral",
+				"punctuation.separator.key-value.ts",
 				"meta.object-literal.key",
 				"meta.objectliteral.ts punctuation.definition.block.ts",
-				"support.constant",
-				"variable.other.constant",
+				// "support.constant",
+				// "variable.other.constant",
 				"support.function.magic",
-				"support.variable.automatic",
+								"support.variable.automatic",
 				// From Powershell
 				"support.variable.automatic punctuation.definition.variable"
 			],
@@ -412,12 +448,7 @@
 				"foreground": "#9876AA",
 			}
 		},
-		{
-			"scope": "keyword.operator",
-			"settings": {
-				"foreground": "#FF0000"
-			}
-		},
+		
 		// 
 		// Styles
 		// 
@@ -445,6 +476,7 @@
 		{
 			"name": "Underline",
 			"scope": [
+				"fenced_code.block.language",
 				"meta.object-literal.key.ts",
 				"meta.objectliteral.ts punctuation.definition.block.ts",
 			],
@@ -486,6 +518,7 @@
 			"name": "bold",
 			"scope": [
 				"markup.bold.markdown",
+				"heading.1.markdown"
 			],
 			"settings": {
 				"fontStyle": "bold"
@@ -515,6 +548,7 @@
 			"italic": true,
 			// "underline": true
 		},
+		
 		"variable": {
 			// "foreground": "#A9B7C6",
 			// "underline": true
