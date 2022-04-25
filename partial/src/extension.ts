@@ -55,7 +55,7 @@ function validateArguments( arg: any ): Maybe<NavigateArguments> {
 		return;
 	}
 
-	return { ratio: ratio, select: select === 'true' };
+	return { ratio: ratio, select: select === true };
 }
 
 
@@ -86,8 +86,8 @@ async function navigateCursor( a: any ) {
 
 export function activate( context: vscode.ExtensionContext ) {
 
-	let disposable = vscode.commands.registerCommand( COMMAND_NAME, navigateCursor );
-
+	const disposable = vscode.commands.registerCommand( COMMAND_NAME, navigateCursor );
+	
 	context.subscriptions.push( disposable );
 
 }
