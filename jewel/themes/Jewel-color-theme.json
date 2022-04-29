@@ -325,7 +325,7 @@
 			"name": "Pink",
 			"scope": [
 				"entity.name.tag.yaml",
-				"string.other.link.title.markdown.foam"
+				
 			],
 			"settings": {
 				"foreground": "#e67d7d",
@@ -357,6 +357,7 @@
 		{
 			"name": "Darker Blue",
 			"scope": [
+				"string.other.link.title.markdown.foam",
 				"entity.name.function.ts meta.function-call.ts",
 				// "meta.function-call.ts entity.name.function.ts",
 				"meta.import.ts meta.block.ts",
