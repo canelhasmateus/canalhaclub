@@ -1,3 +1,6 @@
 [submodule "vs-partial"]
 	path = vs-partial
 	url = https://github.com/canelhasmateus/vs-partial
+[submodule "vs-jewel"]
+	path = vs-jewel
+	url = https://github.com/canelhasmateus/vs-jewel
